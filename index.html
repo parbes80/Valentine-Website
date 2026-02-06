@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day, My Love!</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="A Valentine's Day Surprise for the most amazing woman.">
+    <meta property="og:title" content="Valentine Surprise from Prabesh">
+    <meta property="og:description" content="Celebrating our love and our future.">
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1518199266791-5375a83190b7?q=80&w=2000&auto=format&fit=crop">
+    <meta property="og:url" content="https://prabesh-valentine.netlify.app">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Great+Vibes&family=Nunito:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Background Elements -->
+    <div class="bg-overlay"></div>
+    <div class="falling-hearts-container" id="falling-hearts"></div>
+
+    <!-- Music Control (Fixed) -->
+    <div class="music-control">
+        <button id="music-toggle" aria-label="Toggle Music">
+            <i class="fas fa-music"></i>
+        </button>
+        <div class="music-player-hidden">
+            <!-- Hidden YouTube Player -->
+            <div id="player"></div>
+        </div>
+    </div>
+
+    <!-- Section 0: Intro Screen (Will you be mine?) -->
+    <div id="intro-screen" class="intro-screen">
+        <div class="intro-content">
+            <h1 class="intro-title">Will you be my Valentine?</h1>
+            <div class="intro-buttons">
+                <button id="btn-yes" class="btn-intro btn-yes">Yes <i class="fas fa-heart"></i></button>
+                <button id="btn-no" class="btn-intro btn-no">No <i class="fas fa-heart-broken"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content (Hidden Initially) -->
+    <div id="main-content" class="hidden-content">
+        <main class="container">
+            <!-- Section 1: Header & Greeting -->
+            <section id="header" class="fade-in-section">
+                <div class="header-content">
+                    <h1 class="main-title">Happy Valentine's Day, <span class="highlight-name">My Love!</span> ❤️</h1>
+                    <p class="subtitle">From Kathmandu to Forever</p>
+                </div>
+            </section>
+
+            <!-- Section 2: Personal Message -->
+            <section id="message" class="card fade-in-section">
+                <div class="card-inner">
+                    <h2>To the most amazing woman...</h2>
+                    <p class="heartfelt-text">
+                        "From our first date in Kathmandu to every adventure since, you've made every moment magical.
+                        I love you more each day. You are the poetry my heart writes and the melody my soul sings."
+                    </p>
+                    <p class="signature">- Prabesh</p>
+                </div>
+            </section>
+
+            <!-- Section 3: Reasons I Love You -->
+            <section id="reasons" class="fade-in-section">
+                <h2>Why I Love You</h2>
+                <ul class="reasons-list">
+                    <li class="reason-item" style="--delay: 1;">
+                        <span class="icon">🔔</span> Your laughter that echoes like the bells in Bagmati.
+                    </li>
+                    <li class="reason-item" style="--delay: 2;">
+                        <span class="icon">✨</span> The way you light up my world brighter than the lights of Thamel.
+                    </li>
+                    <li class="reason-item" style="--delay: 3;">
+                        <span class="icon">🌌</span> Our shared dreams under the Nepali skies.
+                    </li>
+                    <li class="reason-item" style="--delay: 4;">
+                        <span class="icon">💖</span> Your kindness that inspires me daily.
+                    </li>
+                    <li class="reason-item" style="--delay: 5;">
+                        <span class="icon">🏠</span> The future we're building together in 2026 and beyond.
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Section 4: Photo Gallery (Scrolling Series) -->
+            <section id="gallery" class="fade-in-section">
+                <h2>Our Memories</h2>
+                <p class="instruction-text">Swipe to see more →</p>
+
+                <div class="scrolling-wrapper">
+                    <div class="scroll-card">
+                        <img src="https://images.unsplash.com/photo-1529683266228-5695034c483d?q=80&w=600&auto=format&fit=crop"
+                            alt="Couple Moment 1">
+                        <div class="caption">Our first adventure</div>
+                    </div>
+                    <div class="scroll-card">
+                        <img src="https://images.unsplash.com/photo-1545642456-1cb7d5d369c0?q=80&w=600&auto=format&fit=crop"
+                            alt="Couple Moment 2">
+                        <div class="caption">That special evening</div>
+                    </div>
+                    <div class="scroll-card">
+                        <img src="https://images.unsplash.com/photo-1534764831620-33303645c3ac?q=80&w=600&auto=format&fit=crop"
+                            alt="Couple Moment 3">
+                        <div class="caption">Laughing together</div>
+                    </div>
+                    <div class="scroll-card">
+                        <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?q=80&w=600&auto=format&fit=crop"
+                            alt="Couple Moment 4">
+                        <div class="caption">Building our future</div>
+                    </div>
+                    <div class="scroll-card">
+                        <img src="https://images.unsplash.com/photo-1621621667797-e06afc217fb0?q=80&w=600&auto=format&fit=crop"
+                            alt="Couple Moment 5">
+                        <div class="caption">Endless love</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 5: Countdown -->
+            <section id="countdown-section" class="fade-in-section">
+                <h2>Counting Down to Feb 14, 2026</h2>
+                <div id="countdown" class="countdown-container">
+                    <div class="time-box">
+                        <span id="days">00</span>
+                        <span class="label">Days</span>
+                    </div>
+                    <div class="time-box">
+                        <span id="hours">00</span>
+                        <span class="label">Hours</span>
+                    </div>
+                    <div class="time-box">
+                        <span id="minutes">00</span>
+                        <span class="label">Minutes</span>
+                    </div>
+                    <div class="time-box">
+                        <span id="seconds">00</span>
+                        <span class="label">Seconds</span>
+                    </div>
+                </div>
+                <p id="countdown-message" class="hidden">Happy Valentine's Day! Let's celebrate eternally.</p>
+            </section>
+
+            <!-- Section 6: Interactive Poem Reveal -->
+            <section id="poem-section" class="fade-in-section">
+                <button id="reveal-btn" class="btn-primary">
+                    Reveal a Special Nepali Love Poem <i class="fas fa-heart"></i>
+                </button>
+
+                <div id="poem-content" class="poem-container hidden">
+                    <h3>A Common Love Story: Yours and Mine</h3>
+                    <p class="poem-meta">By Uma Subedi | Translated by Suman Pokhrel</p>
+
+                    <div class="poem-text">
+                        <p>You invited me to settle<br>
+                            inside your heart.<br>
+                            the delightful brilliance emerged from<br>
+                            the pane of your heart</p>
+
+                        <p>My heart wanted<br>
+                            to swim on the lake of your heart,<br>
+                            to keep drowning into the depth of love,<br>
+                            and to stay hiding inside your heart<br>
+                            for the whole of my life.</p>
+
+                        <p>My heart kept searching for<br>
+                            the entrance to your heart,<br>
+                            it searched in the company of the days<br>
+                            and searched with the supports of nights.<br>
+                            It searched all over my dreams and imaginations.</p>
+
+                        <p>One melodious moment,<br>
+                            an affectionate touch caressed<br>
+                            my shuddering heart.</p>
+
+                        <p>Carrying a spirit like that of a waterfall<br>
+                            getting oneself rapped with the rays of hopes<br>
+                            my heart ran after that attraction,<br>
+                            and kept running across the bundles of desires<br>
+                            embracing the excitement of entering your heart.</p>
+
+                        <p>On colliding with my eyes,<br>
+                            the delightful brilliance emerged from<br>
+                            the pane of your heart<br>
+                            ultimately<br>
+                            merged with me.</p>
+                    </div>
+
+                    <hr class="divider">
+
+                    <details class="more-poetry">
+                        <summary>Read Original Nepali (if available) / More</summary>
+                        <p><em>(Poetry is the language of the soul. May our story always be this beautiful.)</em></p>
+                    </details>
+                </div>
+            </section>
+            <!-- Section 7: Valentine Week Journey -->
+            <section id="valentine-week" class="fade-in-section week-nav">
+                <h2>The Week of Love</h2>
+                <p class="subtitle">Celebrate every moment with me</p>
+                <div class="week-links">
+                    <a href="rose_day.html" class="day-link" data-date="02-07">🌹 Rose Day (Feb 7)</a>
+                    <a href="propose_day.html" class="day-link" data-date="02-08">💍 Propose Day (Feb 8)</a>
+                    <a href="chocolate_day.html" class="day-link" data-date="02-09">🍫 Chocolate Day (Feb 9)</a>
+                    <a href="teddy_day.html" class="day-link" data-date="02-10">🧸 Teddy Day (Feb 10)</a>
+                    <a href="promise_day.html" class="day-link" data-date="02-11">🤞 Promise Day (Feb 11)</a>
+                    <a href="hug_day.html" class="day-link" data-date="02-12">🤗 Hug Day (Feb 12)</a>
+                    <a href="kiss_day.html" class="day-link" data-date="02-13">💋 Kiss Day (Feb 13)</a>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <p>With all my love, <span class="signature-font">Prabesh</span></p>
+        <p>February 2026</p>
+    </footer>
+
+    <!-- Custom Alert Modal -->
+    <div id="custom-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-icon">🔒❤️</div>
+            <h3 id="modal-title">Wait for it!</h3>
+            <p id="modal-message">This surprise unlocks soon.</p>
+            <button class="btn-primary" id="modal-ok">Okay, I'll wait!</button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <!-- Confetti Library -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <!-- Main Script -->
+    <script src="script.js"></script>
+
+    <!-- YouTube API (for better audio control) -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+</body>
+
+</html>

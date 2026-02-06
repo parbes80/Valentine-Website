@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Promise Day! 🤞</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Nunito:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="day-page theme-promise">
+    <a href="index.html?skip=true" class="back-link"><i class="fas fa-arrow-left"></i> Home</a>
+
+    <div class="container center-content">
+        <h1 class="main-title">Happy Promise Day! 🤞</h1>
+        <p class="subtitle">Feb 11 - Vows for eternity</p>
+
+        <div class="promise-card">
+            <h2>My Promises to You</h2>
+            <ul class="promise-list">
+                <li><input type="checkbox" id="p1" checked disabled> <label for="p1">To love you
+                        unconditionally.</label></li>
+                <li><input type="checkbox" id="p2" checked disabled> <label for="p2">To support your dreams.</label>
+                </li>
+                <li><input type="checkbox" id="p3" checked disabled> <label for="p3">To always be your best
+                        friend.</label></li>
+                <li><input type="checkbox" id="p4" checked disabled> <label for="p4">To make you smile every
+                        day.</label></li>
+            </ul>
+            <button id="sign-promise" class="btn-primary">Seal with Love</button>
+        </div>
+
+        <div id="promise-sealed" class="hidden">
+            <p class="sealed-msg">Sealed with a kiss! 💋</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
